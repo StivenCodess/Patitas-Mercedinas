@@ -14,9 +14,9 @@ const aristotelica = localFont({
 export default function Home() {
 	return (
 		<>
-			<header className="bg-white w-full h-80 relative overflow-hidden flex justify-center sm:items-center flex-col items-center">
+			<header className="bg-white w-full h-80 relative overflow-hidden flex justify-center sm:items-center flex-col items-center ">
 				<section className="text-center flex flex-col sm:gap-3 mb-10 max-w-[500px] ml-5 w-96 items-center ">
-					<div className="w-10 flex items-center justify-center h-10 bg-[#5CE1E6] fill-white rounded-full mb-5">
+					<div className="w-10 flex items-center justify-center h-10 bg-[#5CE1E6] fill-white rounded-full sm:mb-2 mb-5">
 						<DogTracks className="w-5 rounded-full" />
 					</div>
 					<span
@@ -31,7 +31,7 @@ export default function Home() {
 					</h1>
 				</section>
 				<Blob1 className="absolute w-80 -top-64 -left-24 rotate-[36deg] opacity-50"></Blob1>
-				<Blob2 className="absolute w-80 -bottom-32 -right-28  sm:-left-10 rotate-[-171deg] opacity-50" />
+				<Blob2 className="absolute w-80 -bottom-32 -right-20  sm:-left-10 rotate-[-171deg] opacity-50" />
 				<Image
 					src="/perroHeader.png"
 					width={370}
@@ -40,6 +40,85 @@ export default function Home() {
 					alt="Perro portada"
 				/>
 			</header>
+
+			<main className="flex max-w-4xl gap-5 gap-x-8 flex-wrap justify-center -mt-5 z-40">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
+						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
+							Perros
+						</h2>
+						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
+							Ver mas
+						</button>
+					</section>
+					<picture className="px-4 relative">
+						<Image
+							src="/Dog2.png"
+							width={150}
+							height={150}
+							className=""
+							alt="Black Dog"
+						/>
+					</picture>
+				</article>
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
+						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
+							Perros
+						</h2>
+						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
+							Ver mas
+						</button>
+					</section>
+					<picture className="px-4 relative">
+						<Image
+							src="/Dog2.png"
+							width={150}
+							height={150}
+							className=""
+							alt="Black Dog"
+						/>
+					</picture>
+				</article>
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
+						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
+							Perros
+						</h2>
+						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
+							Ver mas
+						</button>
+					</section>
+					<picture className="px-4 relative">
+						<Image
+							src="/Dog2.png"
+							width={150}
+							height={150}
+							className=""
+							alt="Black Dog"
+						/>
+					</picture>
+				</article>
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
+						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
+							Perros
+						</h2>
+						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
+							Ver mas
+						</button>
+					</section>
+					<picture className="px-4 relative">
+						<Image
+							src="/Dog2.png"
+							width={150}
+							height={150}
+							className=""
+							alt="Black Dog"
+						/>
+					</picture>
+				</article>
+			</main>
 		</>
 	);
 }

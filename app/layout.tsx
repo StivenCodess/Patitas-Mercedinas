@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Onest, Caprasimo } from "next/font/google";
+import { Concert_One } from "next/font/google";
 import "./globals.css";
 
-const capra = Caprasimo({ weight: "400", subsets: ["latin"] });
+const onest = Concert_One({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Patitas Mercedinas",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={capra.className}>{children}</body>
+			<body className={`${onest.className} flex items-center flex-col `}>{children}</body>
 		</html>
 	);
 }
