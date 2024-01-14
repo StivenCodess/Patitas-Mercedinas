@@ -41,8 +41,8 @@ export default function Home() {
 				/>
 			</header>
 
-			<main className="flex max-w-5xl gap-5 gap-x-8 sm:flex-wrap flex-col sm:flex-row justify-center items-start -mt-5 z-40">
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
+			<main className="flex max-w-5xl gap-5 gap-x-8 sm:flex-wrap flex-col sm:flex-row justify-center items-center -mt-5 z-40">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
 						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
 							Perros en adopción
@@ -61,7 +61,7 @@ export default function Home() {
 						/>
 					</picture>
 				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
 						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
 							Perros de refugio
@@ -80,7 +80,7 @@ export default function Home() {
 						/>
 					</picture>
 				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
 						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
 							Gatos en adopción
@@ -99,7 +99,7 @@ export default function Home() {
 						/>
 					</picture>
 				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
 						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
 							Perros & Gatos Adoptados
