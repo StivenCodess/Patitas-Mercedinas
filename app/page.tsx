@@ -41,79 +41,79 @@ export default function Home() {
 				/>
 			</header>
 
-			<main className="flex max-w-4xl gap-5 gap-x-8 flex-wrap justify-center -mt-5 z-40">
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+			<main className="flex max-w-5xl gap-5 gap-x-8 sm:flex-wrap flex-col sm:flex-row justify-center items-start -mt-5 z-40">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
-							Perros
+						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
+							Perros en adopción
 						</h2>
 						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
 							Ver mas
 						</button>
 					</section>
-					<picture className="px-4 relative">
+					<picture className="relative w-44">
 						<Image
-							src="/Dog2.png"
+							src="/Dog.webp"
 							width={150}
 							height={150}
-							className=""
+							className="absolute bottom-0"
 							alt="Black Dog"
 						/>
 					</picture>
 				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
-							Perros
+						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
+							Perros de refugio
 						</h2>
 						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
 							Ver mas
 						</button>
 					</section>
-					<picture className="px-4 relative">
+					<picture className="relative w-44">
 						<Image
-							src="/Dog2.png"
+							src="/Dog2.webp"
 							width={150}
 							height={150}
-							className=""
+							className="absolute bottom-0"
 							alt="Black Dog"
 						/>
 					</picture>
 				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
-							Perros
+						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
+							Gatos en adopción
 						</h2>
 						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
 							Ver mas
 						</button>
 					</section>
-					<picture className="px-4 relative">
+					<picture className="relative w-44">
 						<Image
-							src="/Dog2.png"
+							src="/cats/cat.webp"
 							width={150}
 							height={150}
-							className=""
+							className="absolute bottom-0"
 							alt="Black Dog"
 						/>
 					</picture>
 				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl pt-4 max-w-96 max-h-48 ">
+				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-96  sm:max-w-md max-h-48 min-h-52 ">
 					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white tracking-widest">
-							Perros
+						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
+							Perros & Gatos Adoptados
 						</h2>
 						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
 							Ver mas
 						</button>
 					</section>
-					<picture className="px-4 relative">
+					<picture className="relative w-44">
 						<Image
-							src="/Dog2.png"
+							src="/cat-dog.webp"
 							width={150}
 							height={150}
-							className=""
+							className="absolute bottom-0"
 							alt="Black Dog"
 						/>
 					</picture>
