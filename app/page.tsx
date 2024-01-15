@@ -3,6 +3,7 @@ import Image from "next/image";
 import Blob1 from "./components/icons/Blob1";
 import Blob2 from "./components/icons/Blob2";
 import DogTracks from "./components/icons/DogTracks";
+import AnimalCard from "./components/AnimalCard";
 
 import localFont from "next/font/local";
 const mangoFont = localFont({ src: "./../public/font/Mango-Regular.woff2" });
@@ -40,84 +41,39 @@ export default function Home() {
 					alt="Perro portada"
 				/>
 			</header>
-
+			{/* TODO: ARREGLAR LOS TAMAÑOS DE LOS ANIMALITOS */}
 			<main className="flex max-w-5xl gap-5 gap-x-8 sm:flex-wrap flex-col sm:flex-row justify-center items-center -mt-5 z-40">
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
-					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
-							Perros en adopción
-						</h2>
-						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
-							Ver mas
-						</button>
-					</section>
-					<picture className="relative w-44">
-						<Image
-							src="/Dog.webp"
-							width={150}
-							height={150}
-							className="absolute bottom-0"
-							alt="Black Dog"
-						/>
-					</picture>
-				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
-					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
-							Perros de refugio
-						</h2>
-						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
-							Ver mas
-						</button>
-					</section>
-					<picture className="relative w-44">
-						<Image
-							src="/Dog2.webp"
-							width={150}
-							height={150}
-							className="absolute bottom-0"
-							alt="Black Dog"
-						/>
-					</picture>
-				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
-					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
-							Gatos en adopción
-						</h2>
-						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
-							Ver mas
-						</button>
-					</section>
-					<picture className="relative w-44">
-						<Image
-							src="/cats/cat.webp"
-							width={150}
-							height={150}
-							className="absolute bottom-0"
-							alt="Black Dog"
-						/>
-					</picture>
-				</article>
-				<article className="flex rounded-xl bg-[#87bec0] shadow-2xl max-w-[360px] sm:max-w-md max-h-48 min-h-52 ">
-					<section className="flex flex-col gap-y-3 w-64 justify-center items-center">
-						<h2 className="uppercase font-bold text-3xl text-white text-center tracking-widest">
-							Perros & Gatos Adoptados
-						</h2>
-						<button className="rounded-md p-2 w-40 bg-white uppercase shadow-md">
-							Ver mas
-						</button>
-					</section>
-					<picture className="relative w-44">
-						<Image
-							src="/cat-dog.webp"
-							width={150}
-							height={150}
-							className="absolute bottom-0"
-							alt="Black Dog"
-						/>
-					</picture>
-				</article>
+				<AnimalCard
+					text="Perros en Adopcion"
+					imageSrc="/Dog.webp"
+					size="150"
+					alt="Black Dog"
+					color="bg-[#efad4a]"
+				/>
+
+				<AnimalCard
+					text="Perros de refugio"
+					imageSrc="/Dog2.webp"
+					size="150"
+					alt="Black dog with white"
+					color="bg-[#7cdaf9]"
+				/>
+
+				<AnimalCard
+					text="Gatos en adopción"
+					imageSrc="/cats/cat.webp"
+					size="150"
+					alt="Brown cat"
+					color="bg-[#87bec0]"
+				/>
+
+				<AnimalCard
+					text="Perros & Gatos Adoptados"
+					imageSrc="/cat-dog.webp"
+					size="150"
+					alt="Brown cat"
+					color="bg-[#C982D3]"
+				/>
 			</main>
 		</>
 	);
