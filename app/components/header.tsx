@@ -13,7 +13,7 @@ const aristotelica = localFont({
 
 const Header = () => {
 	return (
-		<header className="bg-white w-full h-80 relative overflow-hidden flex justify-center sm:items-center flex-col items-center ">
+		<header className="bg-white w-full h-80 relative overflow-hidden flex  sm:items-center flex-col items-center ">
 			<section className="text-center flex flex-col sm:gap-3 mb-10 max-w-[500px] ml-5 w-96 items-center ">
 				<div className="w-10 flex items-center justify-center h-10 bg-[#5CE1E6] fill-white rounded-full sm:mb-2 mb-5">
 					<DogTracks className="w-5 rounded-full" />
