@@ -1,11 +1,11 @@
 import Link from "next/link";
 import AnimalCard from "./components/AnimalCard";
-import Header from "./components/Header";
+import HeaderMain from "./components/HeaderMain";
 
 export default function Home() {
 	return (
 		<>
-			<Header></Header>
+			<HeaderMain></HeaderMain>
 			{/* TODO: ARREGLAR LOS TAMAÑOS DE LOS ANIMALITOS */}
 			<main className="flex max-w-5xl gap-5 gap-x-8 flex-1 sm:flex-wrap flex-col content-start sm:flex-row justify-center items-center -mt-5 z-40">
 				<AnimalCard

@@ -39,7 +39,11 @@ export default function Home({
 
 	return (
 		<>
-			<main className="">
+			<main
+				className={
+					searchParams.collection_status === "approved" ? "sm:block hidden" : "block"
+				}
+			>
 				<form action={donate} className="flex flex-col gap-6">
 					<label className="flex flex-col">
 						<span>Nombre</span>
@@ -77,7 +81,7 @@ export default function Home({
 				</form>
 			</main>
 			{searchParams.collection_status === "approved" && (
-				<div className="sm:w-2/6 p-4 absolute sm:bottom-0 sm:right-0 m-10 shadow-2xl bg-white rounded-xl border-[#69413c] border-[2px] ">
+				<div className="sm:w-2/6 p-4 absolute sm:bottom-0 sm:right-0 m-10 animate-fade-up animate-once animate-duration-1000 animate-ease-linear shadow-2xl bg-white rounded-xl border-[#69413c] border-[2px] ">
 					<Image
 						src="/prueba1.webp"
 						width={100}
