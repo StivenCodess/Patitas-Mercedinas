@@ -1,8 +1,5 @@
 import { MercadoPagoConfig, Preference } from "mercadopago";
 import { redirect } from "next/navigation";
-import Image from "next/image";
-import Link from "next/link";
-import DonationNotification from "../components/DonationNotification";
 import DonationClient from "./page.client";
 
 const client = new MercadoPagoConfig({
@@ -34,10 +31,11 @@ export default function Donation({
 					pending: "http://localhost:3000/donation",
 					failure: "http://localhost:3000/donation",
 				},
+				auto_return: "approved",
 			},
 		});
 
-		redirect(preference.sandbox_init_point!);
+		redirect(preference.init_point!);
 	};
 
 	return <DonationClient donate={donate} />;
