@@ -8,7 +8,7 @@ const DonationNot = () => {
 	const status = searchParams.get("status");
 	const [visible, setVisible] = useState(true);
 
-	if (status === null) return null;
+	if (status === "null") return null;
 
 	useEffect(() => {
 		const timeout = setTimeout(() => {
