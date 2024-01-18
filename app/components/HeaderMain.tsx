@@ -11,7 +11,7 @@ const aristotelica = localFont({
 	src: "./../../public/font/AristotelicaProText-Light.woff2",
 });
 
-const Header = () => {
+const HeaderMain = () => {
 	return (
 		<header className="bg-white w-full h-80 relative overflow-hidden flex  sm:items-center flex-col items-center ">
 			<section className="text-center flex flex-col sm:gap-3 mb-10 max-w-[500px] ml-5 w-96 items-center ">
@@ -42,4 +42,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default HeaderMain;
