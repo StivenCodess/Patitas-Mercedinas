@@ -21,7 +21,7 @@ export default function Donation({
 				items: [
 					{
 						id: "donacion",
-						title: `name:${name} message: ${message}`,
+						title: message,
 						quantity: 1,
 						unit_price: Number(formData.get("amount")),
 					},
@@ -32,6 +32,9 @@ export default function Donation({
 					failure: "http://localhost:3000/donation",
 				},
 				auto_return: "approved",
+				payer: {
+					name: name,
+				},
 			},
 		});
 

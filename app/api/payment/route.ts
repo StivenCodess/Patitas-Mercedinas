@@ -13,15 +13,12 @@ export async function POST(request: NextRequest) {
     const body = await request.json().then(data => data as {data: {id: string}})
     const payment = await new Payment(client).get({id: body.data.id})
 
-    console.log("BODY -> ",body)
-    console.log("PAYMENT -> ",payment)
-
-    const donation = {
-        id: payment.id,
-        name: payment.payer?.first_name,
-        amount: payment.transaction_amount,
-        message: payment.description
-    }
+     const donation = {
+         id: payment.id,
+         name: payment.additional_info?.payer?.first_name,
+         amount: payment.transaction_amount,
+         message: payment.description
+     }
 
     const supabaseResult = await supabase.from("donations").insert(donation)
 
