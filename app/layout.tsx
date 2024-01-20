@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en">
 			<body
-				className={`${onest.className} flex items-center justify-center overflow-auto min-h-screen flex-col `}
+				className={`${onest.className} flex items-center justify-center overflow-auto min-h-screen flex-col sm:overflow-hidden `}
 			>
 				{children}
 			</body>

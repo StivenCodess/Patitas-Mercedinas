@@ -8,7 +8,7 @@ const DonationNot = () => {
 	const status = searchParams.get("status");
 	const [visible, setVisible] = useState(true);
 
-	if (status === "null") return null;
+	if (status === null) return null;
 
 	useEffect(() => {
 		const timeout = setTimeout(() => {
@@ -16,8 +16,6 @@ const DonationNot = () => {
 		}, 5000);
 		return () => clearTimeout(timeout);
 	}, []);
-
-	/** TODO: ADD FADE OUT ANIMATION */
 
 	return (
 		<section className={visible ? "block" : "hidden"}>
