@@ -1,10 +1,12 @@
 "use client";
 import DonationNotification from "../components/DonationNotification";
+import DonorTable from "../components/DonorTable";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function DonationClient({
 	donate,
+	donations,
 }: {
 	donate: (formData: FormData) => Promise<never>;
 }) {
@@ -26,7 +28,7 @@ export default function DonationClient({
 
 	return (
 		<>
-			<main className={visible ? "block" : "sm:block hidden"}>
+			<section className={visible ? "block" : "sm:block hidden"}>
 				<form
 					action={donate}
 					className="flex flex-col gap-8 border p-8 w-72 rounded-xl border-[#69413c] shadow-xl"
@@ -65,7 +67,8 @@ export default function DonationClient({
 						Donar
 					</button>
 				</form>
-			</main>
+			</section>
+			<DonorTable donations={donations}></DonorTable>
 			<DonationNotification />
 		</>
 	);
