@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
          message: payment.description
      }
 
-    const supabaseResult = await supabase.from("donations").insert(donation)
+    await supabase.from("donations").insert(donation)
 
     return NextResponse.json({success: true})
 }
