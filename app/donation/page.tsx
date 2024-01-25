@@ -6,6 +6,8 @@ const client = new MercadoPagoConfig({
 	accessToken: process.env.MP_ACCESS_TOKEN as string,
 });
 
+const URL = process.env.URL as string;
+
 export default function Donation({
 	searchParams,
 }: {
@@ -27,9 +29,8 @@ export default function Donation({
 					},
 				],
 				back_urls: {
-					success: "http://localhost:3000/donation",
-					pending: "http://localhost:3000/donation",
-					failure: "http://localhost:3000/donation",
+					success: `${URL}/donation`,
+					failure: `${URL}/donation`,
 				},
 				auto_return: "approved",
 				payer: {
